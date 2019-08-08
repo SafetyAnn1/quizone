@@ -1,1 +1,9 @@
-<h1>Welcome to my Awesome Web App</h1>
+<% @notes.each do |note| %>
+  <div>
+    <h1><%= note.title %></h1><br />
+    <i><%= note.description %></i><br />
+    <p><%= note.created_at.strftime("%B %e, %Y at %I:%M %p") %></p><br />
+  </div>
+
+  <hr />
+<% end %>
