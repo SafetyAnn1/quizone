@@ -1,1 +1,47 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
+
+.navbar {
+  background: #1c4580;
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-brand {
+  font-family: 'Damion', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: 'Damion', cursive;
+  font-size: 50px;
+  color: #1c4580;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+body {
+  background: image_url('lines.png');
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  }
+
+  .note-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background-color: #ffff99;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}

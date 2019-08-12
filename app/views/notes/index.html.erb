@@ -1,9 +1,14 @@
-<% @notes.each do |note| %>
-  <div>
-    <h1><%= note.title %></h1><br />
-    <i><%= note.description %></i><br />
-    <p><%= note.created_at.strftime("%B %e, %Y at %I:%M %p") %></p><br />
-  </div>
+<h1>Meier Home Construction Diary</h1>
+<br />
+<%= will_paginate @products %>
 
-  <hr />
+
+<% @notes.each do |note| %>
+  <div class="note-box col-10 offset-1">
+      <p>Note taken on: <%= note.created_at.strftime("%B %e, %Y at %I:%M %p") %></p>
+      <h2><%= note.title %></h2><br />
+      <i><%= note.description %></i><br />      
+  </div>
 <% end %>
+
+
