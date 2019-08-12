@@ -1,6 +1,10 @@
 <h1>Meier Home Construction Diary</h1>
 <br />
-<%= will_paginate @products %>
+<div class="pagination col-10 offset-1">
+  <%= will_paginate @notes %>
+  <% for note in @notes %>
+  <% end %>
+</div>
 
 
 <% @notes.each do |note| %>
